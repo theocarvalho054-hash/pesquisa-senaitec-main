@@ -40,7 +40,7 @@ legend{
     padding:0 5px;
 }
 
-input, select{
+input, select, textarea{
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -59,4 +59,8 @@ input[type="color"]{
 p {
     margin-bottom: 15px;
     font-weight: bold;
+}
+ 
+textarea {
+    min-height: 100px;
 }
