@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pe-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pesquisa SenaiTec</title>
+</head>
+<body>
+    <main>
+     <header>
+          <img src="./img/logo.png" alt="Logo do SenaiTec"
+          width="200px" height="200px">
+          <h1>Pesquisa SenaiTec</h1>
+     </header>
+      <section>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label for="UserName">Nome:</label>
+            <input type="text" name="UserNome" id="UserNome"
+            required> 
+            <br>
+
+            <label for="UserAge">Idade:</label>
+            <input type="number" name="UserAge" id="UserAge"
+            required min="12" max="100">
+            <br>
+
+            <label for="UserBirthDate">Data de Nascimento:</label>
+            <input type="date" name="UserBirthDate" id="UserBirthDate">
+            <br>
+
+            <label for="UserEmail">Email:</label>
+            <input type="email" name="UserEmail" id="UserEmail"
+            required>
+            <br>
+
+            <label for="userPhone">Telefone:</label>
+            <input type="tel" name="userPhone" id="userPhone"
+            pattern="[0-1]{11}" placeholder="21999930595">
+            <br>
+
+            <label for="userImage">Upload da foto:</label>
+            <input type="file" name="userImage" id="userImage">
+            <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Gênero</p>
+                <br>
+                <input type="radio" name="userGender" id="userGender1" value="masculino">
+                <label for="userGender1">Masculino</label>
+                <br>
+                <input type="radio" name="userGender" id="userGender2" value="feminino">
+                <label for="userGender2">feminino</label>
+                <br>
+                <input type="radio" name="userGender" id="userGender3" value="outro">
+                <label for="userGender3">Prefiro não informar</label>
+                <br>
+
+                <label for="userMaritalStatus">Estado Civil:</label>
+                <select name="userMaritalStatus" id="userMaritalStatus">
+                    <option value="">Selecione...</option>
+                    <option value="solteiro">solteiro(a)</option> 
+                    <option value="casado">Casado(a)</option>    
+                    <option value="divorciado">Divorciado(a)</option> 
+                    <option value="viuvo">Viúvo(a)</option> 
+                    <option value="uniaoEstavel">União Estavel</option> 
+                </select>
+                <br>
+
+                <label for="userState">UF:</label>
+                <select name="userState" id="userState">
+                    <option value="">Selecione...</option>
+                    <option value="ac">AC</option>
+                    <option value="al">AL</option>
+                    <option value="ap">AP</option>
+                    <option value="am">AM</option>
+                    <option value="ba">BA</option>
+                    <option value="ce">CE</option>
+                    <option value="df">DF</option>
+                    <option value="es">ES</option>
+                    <option value="go">GO</option>
+                    <option value="ma">MA</option>
+                    <option value="mt">MT</option>
+                    <option value="ms">MS</option>
+                    <option value="mg">MG</option>
+                    <option value="pa">PA</option>
+                    <option value="pb">PB</option>
+                    <option value="pr">PR</option>
+                    <option value="pe">PE</option>
+                    <option value="pi">PI</option>
+                    <option value="rj">RJ</option>
+                    <option value="rn">RN</option>
+                    <option value="rs">RS</option>
+                    <option value="ro">RO</option>
+                    <option value="rr">RR</option>
+                    <option value="sc">SC</option>
+                    <option value="sp">SP</option>
+                    <option value="se">SE</option>
+                    <option value="to">TO</option>
+                </select>
+                <br>
+
+                <label for="userCity">Cidade:</label>
+                <input type="text" name="userCity" id="userCity" placeholder="Rio Branco">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes Sociais</p>
+
+                <input type="checkbox" name="userSocial" id="userSocial" value="instagram">
+                <label for="userSocial">Instagram</label>
+                <br>
+
+                <input type="checkbox" name="userSocial" id="userSocial" value="facebook">
+                <label for="userSocial">Facebook</label>
+                <br>
+
+                <input type="checkbox" name="userSocial" id="userSocial" value="linkedin">
+                <label for="userSocial">Linkedin</label>
+                <br>
+
+                <input type="checkbox" name="userSocial" id="userSocial" value="whatsapp">
+                <label for="userSocial">WhatsApp</label>
+                <br>
+                
+
+                <!-- estilos musical -->
+                <label for="userMusicStyle">Estilo Musical</label>
+                <input type="text" name="userMusicStyle" id="userMusicStyle" list="userMusicStyle">
+
+                <datalist id="userMusicStyle">
+                    <option value="Pagode"></option>
+                    <option value="Pop"></option>                   
+                    <option value="Sertanejo"></option>
+                    <option value="Funk"></option>
+                    <option value="Rock"></option>
+                    <option value="Forró"></option>
+                </datalist>
+
+                <label for="userFavoriteColor">Cor Favorita:</label>
+                <input type="color" name="userFavoriteColor" id="userFavoriteColor">
+
+            </fieldset>
+            
+            <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+</body>
+</html>
