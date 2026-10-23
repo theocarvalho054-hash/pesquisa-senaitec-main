@@ -40,7 +40,7 @@ legend{
     padding:0 5px;
 }
 
-input, select{
+input, select, textarea{
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -59,4 +59,46 @@ input[type="color"]{
 p {
     margin-bottom: 15px;
     font-weight: bold;
+}
+ 
+textarea {
+    min-height: 100px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input:invalid,
+select:invalid {
+    border-color: red;
+}
+
+input:valid,
+select:valid {
+    border-color: green;
+}
+
+button {
+    width: 100%;
+    height: 30px;
+    margin-right: 10px;
+    background-color: white;
+    border: #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: green;
+    color: white;
+    transition: 0.5s;
+}
+
+button[type="reset"]:hover {
+    background-color: red;
+    color: white;
+    transition: 0.5s;
 }

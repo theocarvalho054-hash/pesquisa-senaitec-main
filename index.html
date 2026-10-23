@@ -14,7 +14,7 @@
           <h1>Pesquisa SenaiTec</h1>
      </header>
       <section>
-        <form action="" method="get">
+        <form action="https://formspree.io/f/mpppzgrp" method="post">
             <fieldset>
                 <legend>Dados pessoais</legend>
 
@@ -56,7 +56,7 @@
                 <label for="userGender1">Masculino</label>
                 <br>
                 <input type="radio" name="userGender" id="userGender2" value="feminino">
-                <label for="userGender2">feminino</label>
+                <label for="userGender2">Feminino</label>
                 <br>
                 <input type="radio" name="userGender" id="userGender3" value="outro">
                 <label for="userGender3">Prefiro não informar</label>
@@ -74,7 +74,7 @@
                 <br>
 
                 <label for="userState">UF:</label>
-                <select name="userState" id="userState">
+                <select name="userState" id="userState" required>
                     <option value="">Selecione...</option>
                     <option value="ac">AC</option>
                     <option value="al">AL</option>
@@ -152,17 +152,43 @@
             
             <fieldset>
                 <legend>Satisfação</legend>
+                 
+                <p>Nivel de satisfação com o SenaiTec </p> 
+                <br>
+                <input type="radio" name="userSatisfaction" id="userSatisfaction1" value="otima">
+                <label for="userSatisfaction1">Ótima</label>
+                <br>
+                <input type="radio" name="userSatisfaction" id="userSatisfaction2" value="boa">
+                <label for="userSatisfaction2">Boa</label>
+                <br>
+                <input type="radio" name="userSatisfaction" id="userSatisfaction3" value="regular">
+                <label for="userSatisfaction3">Regular</label>
+                <br>
+                <input type="radio" name="userSatisfaction" id="userSatisfaction4" value="ruim">
+                <label for="userSatisfaction4">Ruim</label>
+                <br>
+
+                <label for="userComment">Deixe seu comentário:</label>
+                <textarea name="userComment" id="userComment"></textarea>
                 
+
             </fieldset>
 
+            <fieldset>
+                <legend>Confirmações</legend>
 
+                <input type="checkbox" name="userLGPD" id="userLGPD" value="lgpd" required>
+                <label for="userLGPD">Eu aceito participar da pesquisa</label>
+                <br>
 
+                <input type="checkbox" name="userConfirmEmail" id="userConfirmEmail" value="email" >
+                <label for="userConfirmEmail">Desejo receber os resultados por email</label>
+                <br>
 
-
-
-
+            </fieldset>
 
             <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
         </form>
       </section>
     </main>
